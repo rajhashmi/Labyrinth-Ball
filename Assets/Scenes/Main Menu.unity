@@ -171,11 +171,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114868392868939020, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
+    - {fileID: 114143544872706196, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1681053563227454, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 539926635}
+    - targetCorrespondingSourceObject: {fileID: 1106078409493812, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 539926634}
   m_SourcePrefab: {fileID: 100100000, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
+--- !u!1 &539926632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1106078409493812, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
+  m_PrefabInstance: {fileID: 539926631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &539926633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1681053563227454, guid: b3d46d0148d0043faaac28d3d0b167b9, type: 3}
+  m_PrefabInstance: {fileID: 539926631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &539926634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539926632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca42603d0393aeb4a8a4c419d54aba7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlay: 1
+  isExit: 0
+--- !u!114 &539926635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539926633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca42603d0393aeb4a8a4c419d54aba7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlay: 0
+  isExit: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

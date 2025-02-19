@@ -8,14 +8,18 @@ public class CameraFollow : MonoBehaviour{
 
     void Awake(){
         player = GameObject.FindWithTag("Player");
+        offset = transform.position - player.transform.position;
     }
     void Start()
     {
         
     }
 
-    void Update()
-    {
+    void Update(){
+
+        if(player){
+            transform.position = player.transform.position + offset;
+        }
         
     }
 }

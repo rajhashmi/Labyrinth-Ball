@@ -62,7 +62,18 @@ public class Ball : MonoBehaviour{
 
     void CheckIfFallDown(){
         if(transform.position.y < -2f){
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+          RestartLevel();
+        }
+        
+    }
+
+    void RestartLevel(){
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
+
+    void OnCollisionEnter(Collision target){
+        if(target.gameObject.tag == "Finish"){
+          Invoke("RestartLevel", 2f);
         }
     }
 }
